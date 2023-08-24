@@ -11,3 +11,9 @@ const characters={
     numbers: "0123456789",
     Symbols:"^!$%&|[]{}/,*+-#@<>~"
 };
+const generatePassword=()=>{
+    let staticPassword="";
+    randomPassword="";
+    excludeDuplicate=false;
+    passLength=lengthSlider.value;
+}
