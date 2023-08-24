@@ -88,3 +88,23 @@ body{
             margin-top:20px;
 
         }
+        .pass-settings .options .option{
+            display: flex;
+            align-items:center;
+            margin-bottom:20px;
+            width:50%;
+        }
+        .options .options:first-child{
+            pointer-events: none;
+        }
+        .options .option input{
+            height:16px;
+            width:16px;
+            cursor:pointer;
+        }
+        .options .option{
+            cursor:pointer;
+            color:#aaa;
+            padding-left:16px;
+        }
+        
