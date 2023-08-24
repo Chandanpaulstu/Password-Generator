@@ -16,4 +16,16 @@ const generatePassword=()=>{
     randomPassword="";
     excludeDuplicate=false;
     passLength=lengthSlider.value;
-}
+};
+options.foreach(option)=> {
+    if(options.checked){
+        if(options.id !="exc-duplicate" && options.id !="spaces"){
+            staticPassword+=characters[options.id];
+        }
+        else if(options.id =="spaces"){
+            staticPassword+='${staticPassword}';
+        }else {
+            excludeDuplicate=true;
+        }
+    }
+};
