@@ -4,3 +4,10 @@ copyIcon=document.querySelector(".input-box span"),
 passwordInput=document.querySelector(".input-box input"),
 passIndicator=document.querySelector(".pass-indicator"),
 generateBtn=document.querySelector(".generate-btn");
+
+const characters={
+    lowercase: "abcdefghijklmnopqrstuvwwxyz",
+    uppercase: "ABCDEFGHIJKLMNOPQRSTUVVWXYZ",
+    numbers: "0123456789",
+    Symbols:"^!$%&|[]{}/,*+-#@<>~"
+};
