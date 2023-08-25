@@ -89,7 +89,7 @@ body{
             height:5px;
         }
         .pass-settings .options{
-            display:felx;
+            display:flex;
             list-style:none;
             flex-wrap:wrap;
             margin-top:20px;
@@ -109,7 +109,7 @@ body{
             width:16px;
             cursor:pointer;
         }
-        .options .option{
+        .options .option label{
             cursor:pointer;
             color:#aaa;
             padding-left:16px;
