@@ -11,21 +11,32 @@ const characters={
     numbers: "0123456789",
     Symbols:"^!$%&|[]{}/,*+-#@<>~"
 };
-const generatePassword=()=>{
-    let staticPassword="";
-    randomPassword="";
-    excludeDuplicate=false;
+const generatePassword = () => {
+    let staticPassword= "",
+    randomPassword= "",
+    excludeDuplicate=false,
     passLength=lengthSlider.value;
-};
-options.foreach(option)=> {
+
+options.foreach(option => {
     if(options.checked){
         if(options.id !="exc-duplicate" && options.id !="spaces"){
-            staticPassword+=characters[options.id];
+            staticPassword += characters[options.id];
         }
         else if(options.id =="spaces"){
-            staticPassword+='${staticPassword}';
+            staticPassword += '${staticPassword}';
         }else {
             excludeDuplicate=true;
         }
     }
-};
+});
+for(let i=0;i<passLength;i++){
+    let randomChar=
+    staticPassword[Math.floor(Math.random() * staticPassword.length)];
+    if(excludeDuplicate) { 
+        !randomPassword.includes(randomChar) || randomChar==" " ? (randomPassword += randomChar) : i--;
+}
+else {
+    randomPassword += randomChar;
+}
+}
+passwordInput.value=randomPassword};
