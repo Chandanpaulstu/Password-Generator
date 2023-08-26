@@ -46,7 +46,7 @@ body{
 }
 .input-box span{
     position:absolute;
-    right:15px;
+    right:13px;
     cursor:pointer;
     line-height:53px;
     color:#aaa;
@@ -77,17 +77,21 @@ body{
 .pass-indicator#medium ::before {
     width:50%;
     background:#f1c80b;}
+
     .pass-indicator#strong ::before {
         width:100%;
         background:#27c468; }
-        .pass-length .details{
-            display:felx;
-            justify-content:space-between;
-        }
-        .pass-length input{
-            width:100%;
-            height:5px;
-        }
+.pass-length{
+    margin:25px 0 20px;
+}
+.pass-length .details{
+ display:flex;
+ justify-content:space-between;
+ } 
+.pass-length input{
+ width:100%;
+  height:5px;
+ }
         .pass-settings .options{
             display:flex;
             list-style:none;
