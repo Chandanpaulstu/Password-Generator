@@ -1,4 +1,4 @@
-*{
+/* *{
     margin:0;
     padding:0;
     box-sizing:boxer-box;
@@ -27,6 +27,47 @@ body{
 }
 .wrapper{
     margin: 20px 30px;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #19cbaa;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: #222;
+    border-radius: 7px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container h2 {
+    font-weight: 600;
+    font-size: 21px;
+    padding: 16px 0;
+    border-bottom: 1px solid #444;
+    color: #fff; /* Added text color */
+}
+
+.wrapper {
+    margin: 20px 0;
+}
+
+/* Adjusted text color for better visibility */
+.container label, .container input[type="number"], .container input[type="checkbox"], .container button {
+    color: #fff;
 }
 .input-box{
     position:relative;
