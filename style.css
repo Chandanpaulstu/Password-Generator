@@ -58,14 +58,14 @@ body {
     font-size: 21px;
     padding: 16px 0;
     border-bottom: 1px solid #444;
-    color: #fff; /* Added text color */
+    color: #fff; 
 }
 
 .wrapper {
     margin: 20px 0;
 }
 
-/* Adjusted text color for better visibility */
+
 .container label, .container input[type="number"], .container input[type="checkbox"], .container button {
     color: #fff;
 }
