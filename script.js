@@ -45,4 +45,9 @@ const updatePassIndicator = () => {
     :lengthSlider.value<=16 ?"medium"
     :"strong";
 };
-const
+const updateSlider = () => {
+    document.querySelector(".pass-length span").innerText=lengthSlider.value;
+generatepassword ();
+updatePassIndicator ();
+};
+updateSlider();
