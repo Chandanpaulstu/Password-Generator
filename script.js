@@ -58,11 +58,10 @@ const updatePassIndicator = () => {
 
 const updateSlider = () => {
     document.querySelector(".pass-length span").innerText = lengthSlider.value;
-    generatePassword();
-    updatePassIndicator();
+    updatePassIndicator(); // Removed generatePassword() from here
 };
 
 lengthSlider.addEventListener("input", updateSlider);
 generateBtn.addEventListener("click", generatePassword);
 
-updateSlider();
+updateSlider(); // Removed generatePassword() from here

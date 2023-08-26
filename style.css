@@ -139,3 +139,26 @@ body{
         .generate-btn:active{
             transform: scale(0.95);
         }
+    /* For small screens */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        max-width: 100%;
+    }
+    .pass-settings .options .option {
+        width: 100%;
+    }
+    .generate-btn {
+        font-size: 14px;
+    }
+}
+
+/* For extra small screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    .generate-btn {
+        font-size: 12px;
+    }
+}    
