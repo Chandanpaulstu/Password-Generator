@@ -40,3 +40,9 @@ else {
 }
 }
 passwordInput.value=randomPassword};
+const updatePassIndicator = () => {
+    passIndicator.id=lengthSlider.value<=8 ? "weak"
+    :lengthSlider.value<=16 ?"medium"
+    :"strong";
+};
+const
